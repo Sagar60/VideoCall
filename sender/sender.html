@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Sender</title>
+
+    </head>
+    <body>
+        <div>
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br><br>
+            <button onclick="sendUsername()">Send</button>
+            <button disabled id="joinCall" onclick="startCall()">Start Call</button>
+        </div>
+        <div id="video-call-div">
+            <div  id="close">
+                <button class="btn btn-success" onclick="closeCall()">Close</button>
+            </div>
+            <script>
+                function closeCall() {
+                    window.location.reload();
+                }
+                
+            </script>
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button id="Videocontrol" onclick="muteVideo()">Mute Video</button>
+                <button id="Audiocontrol" onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>
