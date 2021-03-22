@@ -9,13 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node": "12.17.0",
-    "npm": "6.14.4",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "node-static": "^0.7.11",
     "install": "^0.13.0",
     "nodemon": "^2.0.7",
+    "npm": "^7.5.3",
+    "node-static": "^0.7.11",
     "websocket": "^1.0.33"
   }
 }
